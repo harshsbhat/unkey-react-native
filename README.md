@@ -1,50 +1,20 @@
-# Welcome to your Expo app 👋
+# Ratelimit React-Native Mobile routes using Unkey. 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This app demonstrates @unkey/ratelimit and how you can rate limit your astro routes. Try the following curl request. The route is rate-limited for 3 requests per 30 seconds .
+   
+## Prerequisites
 
-## Get started
+Create an account with [Unkey](https://app.unkey.com/)
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## Setup Unkey 
 
-2. Start the app
+1. Go to unkey [ratelimits](https://app.unkey.com/ratelimits)
 
-   ```bash
-    npx expo start
-   ```
+2. Create a new namespace with the name `astro`
 
-In the output, you'll find options to open the app in a
+3. Go to settings/root-keys and create a root key with Ratelimit permissions
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. You can follow this link to create the root key with ratelimit permissions [https://app.unkey.com/settings/root-keys/new?permissions=ratelimit.*.create_namespace,ratelimit.*.read_namespace,ratelimit.*.limit,ratelimit.*.update_namespace,ratelimit.*.delete_namespace](https://app.unkey.com/settings/root-keys/new?permissions=ratelimit.*.create_namespace,ratelimit.*.read_namespace,ratelimit.*.limit,ratelimit.*.update_namespace,ratelimit.*.delete_namespace)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. Add it in the .env file `UNKEY_ROOT_KEY`
