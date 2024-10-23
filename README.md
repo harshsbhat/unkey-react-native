@@ -4,7 +4,9 @@ This app demonstrates @unkey/ratelimit and how you can rate limit your React-Nat
 
 ## Usage
 
-https://github.com/user-attachments/assets/5cdb2b87-6970-4325-af41-be4d4ff43634
+https://github.com/user-attachments/assets/35588e37-b388-4d6d-b3b6-f45d67296941
+
+
    
 ## Prerequisites
 
