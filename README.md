@@ -64,5 +64,5 @@ npm install
 Start the app. Scan the QR displayed after this to run the app on mobile. If you want to run it on the Web it will start on port `8081`
 
 ```bash
-npm start
+npm run start
 ```
