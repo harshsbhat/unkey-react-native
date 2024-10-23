@@ -64,4 +64,3 @@ Start the app. Scan the QR displayed after this to run the app on mobile. If you
 ```bash
 npm start
 ```
-
